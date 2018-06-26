@@ -2,4 +2,5 @@ image: maven:3-jdk-7
   
 rspec:
   script:
+    - mvn clean install -U
     - mvn test
