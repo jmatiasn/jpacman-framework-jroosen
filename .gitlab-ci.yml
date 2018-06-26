@@ -1,4 +1,9 @@
-image: maven:3-jdk-7
+image: maven:3-jdk-7-xvfb
+
+before_script:
+    - apt-get install wget which xorg-x11-server-Xvfb firefox -y
+    - "Xvfb :99 &"
+    - "export DISPLAY=:99"
   
 rspec:
   script:
