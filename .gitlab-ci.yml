@@ -1,4 +1,4 @@
-image: maven:3-jdk-7-xvfb
+image: maven:3-jdk-7
 
 before_script:
     - apt-get install wget which xorg-x11-server-Xvfb firefox -y
